@@ -68,9 +68,9 @@ col-2 img{
 .btn:hover{
     background: #563434;
 }
-    .header {
-        background: radial-gradient(#fff,#414be7);
-    }
+.header {
+    background: radial-gradient(#fff,#bc9a9a);
+}
 .header .row{
     margin-top: 50px;
 }
