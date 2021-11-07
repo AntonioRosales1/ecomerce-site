@@ -15,6 +15,11 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.
           4/css/fontawesome.min.css" />
     <script src="https://kit.fontawesome.com/f7544b6438.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Confirm Purchase.";
+        }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -281,18 +286,42 @@
                 <div class="col-2">
                     <h1>smartphone Note20 Ultra</h1>
                     <small>
-                        -What Are The Quality For Your Products?
-                        1.Our phones are genuine, original, not Android fake.
-                        2.Our used phone are all original,never been repaired,
-                        they are Grade AAA like new products,all product has been
-                        tested making sure all key function is working well.All products
-                        have been verified according to our inspection standards.
-                        <a href="" class="btn">Buy Now &#8594;</a>
+
+                        <p id="demo">
+                            -What Are The Quality For Your Products?
+                            1.Our phones are genuine, original, not Android fake.
+                            2.Our used phone are all original,never been repaired,
+                            they are Grade AAA like new products,all product has been
+                            tested making sure all key function is working well.All products
+                            have been verified according to our inspection standards.
+                        </p>
+                        <button class="btn" type="button" onclick="myFunction()">Purchase Now &#8594;</button>
                     </small>
                 </div>
             </div>
         </div>
     </div>
+    <form action="action_page.php" method="post">
+        
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
 
     <!-------- testimonial --------->
     <div class="testimonial">
@@ -350,6 +379,7 @@
             </div>
         </div>
     </div>
+
 
 
 </body>
